@@ -1,0 +1,38 @@
+@import 'light-theme';
+
+table.mat-table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+
+  th.mat-header-cell {
+    font-size: 1em;
+    color: $black;
+    font-weight: 500;
+    background-color: $table-header-background;
+  }
+}
+
+.status-tag {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: $gray;
+
+  &.started {
+    background-color: $primary;
+  }
+  &.completed,
+  &.ready-to-view {
+    background-color: $orange;
+  }
+  &.submitted {
+    background-color: $green;
+  }
+  &.printed {
+    background-color: $purple;
+  }
+  &.cancelled {
+    background-color: $danger;
+  }
+}
